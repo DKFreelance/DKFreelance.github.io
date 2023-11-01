@@ -13,20 +13,20 @@ body {
 }
 
 p {
-    text-align: center;
+    text-align: justify-all;
     padding: 0px 100px;
+    margin-left: 9%;
+    margin-right: 9%;
     cursor: url('cursor.cur'), auto;
 }
-
 .parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 345px;
+    height: 500px;
     position: relative;
     cursor: url('cursor.cur'), auto;
-
 }
 
 .logo-container {
@@ -38,56 +38,48 @@ p {
     cursor: url('cursor.cur'), auto;
 }
 
-ul { 
-  margin: 150px auto 0; 
-  padding: 0; 
-  list-style: none; 
-  display: table;
-  width: 600px;
-  text-align: center;
+nav {
+    background-color: #95A1D1; /* Change this to your desired background color */
+    color: #FFFFFF; /* Change this to your desired text color */
+    display: flex;
+    font-family: Arial;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 55px; /* You can adjust the height as needed */
+    cursor: url('cursor.cur'), auto;
+    text-decoration: none;
 }
 
-li { 
-  display: table-cell; 
-  position: relative; 
-  padding: 15px 0;
-}
-a {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.15em;
-  
-  display: inline-block;
-  padding: 15px 20px;
-  position: relative;
-}
-a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-a:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-@media screen and (max-height: 300px) {
-    ul {
-        margin-top: 40px;
-    }
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    cursor: url('cursor.cur'), auto;
 }
 
-/* You can adjust the colors and styling as needed. */
+.menu li {
+    background-color: #95A1D1;
+    padding: 10px;
+    margin: 20px 20px;
+    display: inline-block;
+    cursor: url('cursor.cur'), auto;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #FFFFFF; /* Change this to your desired link color */
+    font-weight: bold;
+    cursor: url('cursor.cur'), auto;
+}
+
+.menu a:hover {
+    color: #FFFFFF; /* Change this to your desired hover color */
+    cursor: url('cursor.cur'), auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
 #header {
-    height: 340px;
+    height: 500px;
     background-image: url('images/header.png');
     background-size: cover;
     background-position: center;
@@ -102,12 +94,12 @@ a:hover:after {
 #header::before {
     content: "";
     display: block;
-    background-color: rgba(149, 161, 209, 0.6);
+    background-color: rgba(148, 155, 206, 0.5);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 345px;
+    height: 500px;
     z-index: 1;
     cursor: url('cursor.cur'), auto;
 }
@@ -158,9 +150,11 @@ a:hover:after {
 
 #image-gallery img {
     max-width: 100%;
-    margin: 0px;
-    display: none;\
+    margin: 10px;
+    display: block;
     align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     cursor: url('cursor.cur'), auto;
 }
 
@@ -272,16 +266,38 @@ a:hover:after {
     background-color: #7780A7;
     color: #FFFFFF;
     cursor: url('cursor.cur'), auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 #footer {
-    height: 40px;
+    height: 175px;
     background-color: #FFFFFF;
-    font-size: 20 px;
+    font-size: 20px;
     font-weight: bold;
     font-family: Arial;
     color: #95A1D1;
     padding: 20px;
+    text-align: center;
+    cursor: url('cursor.cur'), auto;
+}
+
+.social-media {
+    display: inline-block;
+    cursor: url('cursor.cur'), auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.social-icon {
+    display: inline-flex;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 0px;
+    height: 90px;
+    width: 90px;
+    margin: 0 auto;
+    transition: box-shadow 0.3s;
+    border-radius: 50%;
     cursor: url('cursor.cur'), auto;
 }
 
@@ -313,12 +329,14 @@ a:hover:after {
     background-color: #7780A7;
     color: #FFFFFF;
     cursor: url('cursor.cur'), auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 #back-button:hover {
     background-color: #7780A7;
     color: #FFFFFF;
     cursor: url('cursor.cur'), auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 #email-button {
@@ -337,6 +355,7 @@ a:hover:after {
     background-color: #7780A7;
     color: #FFFFFF;
     cursor: url('cursor.cur'), auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 #back-to-top {
@@ -348,8 +367,8 @@ a:hover:after {
     padding: 10px 20px;
     background-color: #7780A7;
     color: #FFFFFF;
-    border: none;
     border-radius: 50px;
+    border: none;
     cursor: url('cursor.cur'), auto;
 }
 
@@ -357,12 +376,7 @@ a:hover:after {
     background-color: #FFFFFF;
     font-family: Arial;
     color: #7780A7;
+    border: none;
     cursor: url('cursor.cur'), auto;
-}
-
-#back-to-top:active {
-    background-color: #7780A7;
-    font-family: Arial;
-    color: #FFFFFF;
-    cursor: url('cursor.cur'), auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
