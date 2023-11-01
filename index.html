@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DKFreelance</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="parallax" style="background-image: url('images/header.jpg');">
+            <div class="logo-container">
+            <a href="file:///Users/dakotasnyder/Desktop/freelance/index.html">
+                <img src="images/dklogohead.png" alt="DKFreelance Logo" width="400" height="250">
+            </a>
+            <img id="animated-gif" src="images/downarrow.gif" alt="Animated Arrow" width="150" height="100">
+            </div>
+        </div>
+    </div>
+   
+<ul>
+  <li><a href="#about-me">About</a></li>
+  <li><a href="#services">Services</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#portfolio">Portfolio</a></li>
+</ul>
+
+    <section id="about-me">
+        <h1><center>ABOUT ME</center></h1>
+        <section id="selfie">
+        <img src="images/dkselfie.png" alt="Dakota Snyder" width="145" height="192">
+        </section>
+        <p>
+            I'm Dakota Snyder, a passionate freelance graphic designer ready to transform your ideas into captivating visual experiences. With a keen eye for detail and a deep understanding of design principles, I specialize in creating unique and impactful designs tailored to your specific needs. From logo design to brand identity development, I bring a fresh perspective to every project, ensuring that your brand stands out in a crowded market. Let's collaborate and create something extraordinary together. Explore my portfolio and let's bring your vision to life!
+        </p>
+        <img src="images/dksignature.png" alt="Dakota Snyder's Signature" width="500" height="250">
+        <button id="email-button" onclick="window.location.href='mailto:daksnyder97@gmail.com';">Email</button>
+    </section>
+    <section id="services">
+        <h1><center>SERVICES</center></h1>
+        <section id="logodesign">
+        <img src="images/logodesign.svg" alt="Logo Design" width="75" height="75">
+        <h3><center>LOGO DESIGN</center></h3>
+        <p>
+            Create unique and impactful logos that capture the essence of a brand, incorporating elements of visual appeal and brand identity.
+        </p>
+        </section>
+        <section id="webdesign">
+        <img src="images/webdesign.svg" alt="Logo Design" width="75" height="75">
+        <h3><center>WEB DESIGN</center></h3>
+        <p>
+            From creating responsive layouts to optimizing user experiences, ensuring that clients' online presence stands out in the digital landscape.
+        </p>
+        </section>
+        <section id="printdesign">
+        <img src="images/printdesign.svg" alt="Logo Design" width="75" height="75">
+        <h3><center>PRINT DESIGN</center></h3>
+        <p>
+            Design eye-catching brochures, flyers, business cards, and other print materials that effectively convey key messages and engage the target audience.
+        </p>
+        </section>
+        <section id="illustration">
+        <img src="images/illustration.svg" alt="Logo Design" width="75" height="75">
+        <h3><center>ILLUSTRATION</center></h3>
+        <p>
+            Custom illustrations that bring ideas, stories, and concepts to life, utilizing various styles and techniques to match desired aesthetic and purpose.
+        </p>
+        </section>
+        <section id="merchandise">
+        <img src="images/merchandise.svg" alt="Logo Design" width="75" height="75">
+        <h3><center>MERCHANDISE</center></h3>
+        <p>
+            This includes designing custom graphics for various promotional items such as t-shirts, mugs, posters, and more.
+        </p>
+        </section>
+    </section>
+    <section id="contact">
+        <h1><center>CONTACT</center></h1>
+        <form id="contact-form" action="mailto:daksnyder97@gmail.com" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        <br>
+        <label for="service">Service:</label>
+        <select id="service" name="service" required>
+            <option value="Logo Design">Logo Design</option>
+            <option value="Print Design">Print Design</option>
+            <option value="Web Design">Web Design</option>
+            <option value="Merchandise">Merchandise</option>
+            <option value="Illustration">Illustration</option>
+            <option value="Other">Other</option>
+        </select>
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <br>
+        <input type="submit" value="Submit" id="submit-button">
+    </form>
+    </section>
+    <section id="portfolio">
+        <h1><center>PORTFOLIO</center></h1>
+        <div id="image-gallery">
+            <img src="images/pestzapp.jpg" alt="Zapp">
+            <img src="images/viberelease.jpg" alt="Vibe">
+            <img src="images/wraptrap.jpg" alt="Wrap">
+            <img src="images/smallscleaning.jpg" alt="Smalls">
+            <img src="images/unifiedpallet.jpg" alt="Unified">
+            <img src="images/angeln.jpg" alt="Angeln">
+        </div>
+        <button id="back-button">Back</button>
+        <button id="next-button">Next</button>
+    </section>
+    <br>
+    <section id="footer">
+        <p><center>
+            © 2016-2023 DKFreelance  All Rights Reserved
+        </center></p>
+    </section>
+    <button id="back-to-top">Back to Top</button>
+</body>
+</html>
