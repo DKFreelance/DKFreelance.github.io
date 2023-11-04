@@ -39,4 +39,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     window.addEventListener("scroll", showBackToTopButton);
+    
+    const quoteElement = document.querySelector('.quote-of-the-day');
+    const quoteText = `"Design is thinking, made visual" - Saul Bass`;
+
+    function typeQuote() {
+        let charIndex = 0;
+        const typingInterval = 40; // Adjust typing speed (milliseconds)
+
+        function typeCharacter() {
+            if (charIndex < quoteText.length) {
+                quoteElement.textContent += quoteText.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeCharacter, typingInterval);
+            }
+        }
+
+        typeCharacter();
+    }
+
+    // Start the typing animation when the page loads
+    typeQuote();
 });

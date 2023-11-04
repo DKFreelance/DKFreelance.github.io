@@ -12,6 +12,11 @@ body {
     cursor: url('cursor.cur'), auto;
 }
 
+h3 {
+    color: #7780A7;
+    cursor: url('cursor.cur'), auto;
+}
+
 p {
     text-align: justify-all;
     padding: 0px 100px;
@@ -19,6 +24,7 @@ p {
     margin-right: 9%;
     cursor: url('cursor.cur'), auto;
 }
+
 .parallax {
     background-attachment: fixed;
     background-position: center;
@@ -59,7 +65,7 @@ nav {
 
 .menu li {
     background-color: #95A1D1;
-    padding: 10px;
+    padding: 30px;
     margin: 20px 20px;
     display: inline-block;
     cursor: url('cursor.cur'), auto;
@@ -75,7 +81,7 @@ nav {
 .menu a:hover {
     color: #FFFFFF; /* Change this to your desired hover color */
     cursor: url('cursor.cur'), auto;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
 }
 
 #header {
@@ -104,6 +110,30 @@ nav {
     cursor: url('cursor.cur'), auto;
 }
 
+.quote-container {
+    text-align: center;
+}
+
+.quote-of-the-day {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: white; /* Change this to your desired text color */
+    animation: pulse 2s 3;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 #dklogo {
     cursor: url('cursor.cur'), auto;
 }
@@ -111,6 +141,14 @@ nav {
 #animated-gif {
     display: block;
     margin: 0 auto;
+    cursor: url('cursor.cur'), auto;
+}
+
+#zappad {
+    display: block;
+    background-color: #FFFFFF;
+    height: 100px;
+    padding: 10px 10px;
     cursor: url('cursor.cur'), auto;
 }
 
@@ -159,7 +197,7 @@ nav {
 }
 
 #services {
-    height: 1800px;
+    height: 1600px;
     font-size: 20px;
     font-family: Arial;
     color: #95A1D1;
@@ -220,20 +258,19 @@ nav {
     cursor: url('cursor.cur'), auto;
 }
 
-#contact-form input,
-#contact-form textarea {
+#contact-form input {
     width: 40%;
     padding: 10px;
     margin-top: 5px;
     border: 2px solid #95A1D1;
-    border-radius: 10px;
+    border-radius: 50px;
     font-family: Arial, sans-serif;
-    color: #95A1D1;
+    color: #7780A7;
     cursor: url('cursor.cur'), auto;
 }
 
 #contact-form select {
-    border-radius: 10px;
+    border-radius: 50px;
     width: 42%;
     margin-top: 5px;
     border: 2px solid #95A1D1;
@@ -245,7 +282,13 @@ nav {
 
 #contact-form textarea {
     resize: none;
-    border-radius: 10px;
+    width: 40%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #95A1D1;
+    font-family: Arial, sans-serif;
+    border-radius: 20px;
     cursor: url('cursor.cur'), auto;
 }
 
@@ -258,7 +301,7 @@ nav {
     padding: 10px 20px;
     border: none;
     color: #95A1D1;
-    border-radius: 20px;
+    border-radius: 50px;
     cursor: url('cursor.cur'), auto;
 }
 
@@ -270,13 +313,14 @@ nav {
 }
 
 #footer {
-    height: 175px;
+    height: 170px;
     background-color: #FFFFFF;
     font-size: 20px;
-    font-weight: bold;
     font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
     color: #95A1D1;
-    padding: 20px;
+    padding: 0px 0px;
     text-align: center;
     cursor: url('cursor.cur'), auto;
 }
@@ -286,6 +330,7 @@ nav {
     cursor: url('cursor.cur'), auto;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding: 0px 0px;
 }
 
 .social-icon {
@@ -358,6 +403,12 @@ nav {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
+@media only screen and (max-device-width: 1355px) {
+    .example {
+        background-attatchment: scroll;
+    }
+}
+
 #back-to-top {
     display: none;
     font-family: Arial;
@@ -379,4 +430,11 @@ nav {
     border: none;
     cursor: url('cursor.cur'), auto;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#back-to-top:active {
+    background-color: #7780A7;
+    font-family: Arial;
+    color: #FFFFFF;
+    cursor: url('cursor.cur'), auto;
 }
