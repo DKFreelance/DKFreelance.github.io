@@ -12,6 +12,42 @@ body {
     cursor: url('cursor.cur'), auto;
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+    .content {
+        width: 100%;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .desktop-only {
+        display: none;
+    }
+}
+
+.nav-links {
+  display: block; /* Initially displayed */
+}
+
+@media screen and (max-width: 600px) {
+  .nav-links {
+    display: none; /* Hide the links on smaller screens */
+  }
+}
+
 h3 {
     color: #7780A7;
     cursor: url('cursor.cur'), auto;
@@ -401,42 +437,6 @@ nav {
     color: #FFFFFF;
     cursor: url('cursor.cur'), auto;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-}
-
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .sidebar {
-        display: none;
-    }
-    .content {
-        width: 100%;
-    }
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-@media screen and (max-width: 600px) {
-    .desktop-only {
-        display: none;
-    }
-}
-
-.nav-links {
-  display: block; /* Initially displayed */
-}
-
-@media screen and (max-width: 600px) {
-  .nav-links {
-    display: none; /* Hide the links on smaller screens */
-  }
 }
 
 #back-to-top {
