@@ -95,9 +95,6 @@ nav {
     background-color: #95A1D1;
     font-family: Arial;
     color: #FFFFFF;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     cursor: url('cursor.cur'), auto;
   }
 }
@@ -422,13 +419,13 @@ nav {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 1284px) {
+@media screen and (max-width: 600px) {
     body {
         font-size: 12px;
     }
 }
 
-@media screen and (max-width: 1284px) {
+@media screen and (max-width: 600px) {
     .sidebar {
         display: none;
     }
@@ -442,7 +439,7 @@ img {
     height: auto;
 }
 
-@media screen and (max-width: 1284px) {
+@media screen and (max-width: 600px) {
     .desktop-only {
         display: none;
     }
@@ -452,7 +449,7 @@ img {
   display: block; /* Initially displayed */
 }
 
-@media screen and (max-width: 1284px) {
+@media screen and (max-width: 600px) {
   .nav-links {
     display: none; /* Hide the links on smaller screens */
   }
