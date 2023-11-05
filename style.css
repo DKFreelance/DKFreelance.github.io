@@ -12,42 +12,6 @@ body {
     cursor: url('cursor.cur'), auto;
 }
 
-@media screen and (max-width: 1284px) {
-    body {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 1284px) {
-    .sidebar {
-        display: none;
-    }
-    .content {
-        width: 100%;
-    }
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-@media screen and (max-width: 1284px) {
-    .desktop-only {
-        display: none;
-    }
-}
-
-.nav-links {
-  display: block; /* Initially displayed */
-}
-
-@media screen and (max-width: 1284px) {
-  .nav-links {
-    display: none; /* Hide the links on smaller screens */
-  }
-}
-
 h3 {
     color: #7780A7;
     cursor: url('cursor.cur'), auto;
@@ -118,6 +82,24 @@ nav {
     color: #FFFFFF; /* Change this to your desired hover color */
     cursor: url('cursor.cur'), auto;
     text-decoration: underline;
+}
+
+.menu-icon {
+  display: none; /* Initially hidden */
+}
+
+@media screen and (max-width: 600px) {
+  .menu-icon {
+    display: block; /* Show the icon on smaller screens */
+    cursor: pointer;
+    background-color: #95A1D1;
+    font-family: Arial;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    cursor: url('cursor.cur'), auto;
+  }
 }
 
 #header {
@@ -233,7 +215,7 @@ nav {
 }
 
 #services {
-    height: 1800px;
+    height: 1600px;
     font-size: 20px;
     font-family: Arial;
     color: #95A1D1;
@@ -322,6 +304,7 @@ nav {
     height: 100px;
     padding: 10px;
     margin-top: 5px;
+    color: #7780A7;
     border: 2px solid #95A1D1;
     font-family: Arial, sans-serif;
     border-radius: 20px;
@@ -437,6 +420,42 @@ nav {
     color: #FFFFFF;
     cursor: url('cursor.cur'), auto;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 1284px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1284px) {
+    .sidebar {
+        display: none;
+    }
+    .content {
+        width: 100%;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1284px) {
+    .desktop-only {
+        display: none;
+    }
+}
+
+.nav-links {
+  display: block; /* Initially displayed */
+}
+
+@media screen and (max-width: 1284px) {
+  .nav-links {
+    display: none; /* Hide the links on smaller screens */
+  }
 }
 
 #back-to-top {
