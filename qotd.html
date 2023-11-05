@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DKFreelance</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="parallax" style="background-image: url('images/header.png');">
+            <div class="logo-container">
+<a href="file:///Users/dakotasnyder/Desktop/dkfreelance/index.html">
+    <section id="dklogo">
+        <img src="images/dklogohead.png" alt="DKFreelance Logo" width="600" height="375">
+    </section>
+</a>
+<div class="quote-container">
+    <blockquote class="quote-of-the-day">
+            <p id="quote-text"></p>
+    </blockquote>
+</div>
+<img id="animated-gif" src="images/downarrow.gif" alt="Animated Arrow" width="150" height="100">
+            </div>
+        </div>
+    </div>
+    <nav>
+    <ul class="menu">
+        <li><b><a href="index.html">HOME</a></b></li>
+        <li><b><a href="#about-me">ABOUT ME</a></b></li>
+        <li><b><a href="#services">SERVICES</a></b></li>
+        <li><b><a href="#contact">CONTACT</a></b></li>
+        <li><b><a href="#portfolio">PORTFOLIO</a></b></li>
+    </ul>
+    </nav>
+    <section id="contact">
+        <h1><center>SUBMIT A QUOTE OF THE DAY</center></h1>
+        <form id="contact-form" action="mailto:daksnyder97@gmail.com?subject=QOTD%20Submission%20(From%20Website)&body=Name:%20%0D%0A%0D%0AEmail:%20%0D%0A%0D%0AQuote:%20%0D%0A%0D%0AAuthor:%20" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="quote">Quote (max 3000 characters):</label>
+    <textarea id="quote" name="quote" rows="4" maxlength="3000" required></textarea>
+    <br>
+    <label for="author">Author of the Quote:</label>
+    <input type="text" id="author" name="author" required>
+    <br>
+    <input type="submit" value="Submit" id="submit-button">
+</form>
+    </section>
+
+    <!-- Rest of your HTML content goes here -->
+
+    <button id="back-to-top">Back to Top</button>
+</body>
+
+</html>
