@@ -5,13 +5,13 @@
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
     <div id="header">
         <div class="parallax" style="background-image: url('images/header.png');">
             <div class="logo-container">
-<a href="index.html">
+<a href="file:///Users/dakotasnyder/Desktop/dkfreelance/index.html">
     <section id="dklogo">
         <img src="images/dklogohead.png" alt="DKFreelance Logo" width="600" height="375">
     </section>
@@ -27,14 +27,20 @@
     </div>
     <nav>
     <ul class="menu">
-        <li><b><a href="#about-me">ABOUT ME</a></b></li>
-        <li><b><a href="#services">SERVICES</a></b></li>
-        <li><b><a href="#contact">CONTACT</a></b></li>
-        <li><b><a href="#portfolio">PORTFOLIO</a></b></li>
-        <li><b><a href="qotd.html">QOTD</a></b></li>
-    </ul>
-    </nav>
-    <section id="about-me">
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu-list">
+            <li><b><a href="#about-me">ABOUT ME</a></b></li>
+            <li><b><a href="#services">SERVICES</a></b></li>
+            <li><b><a href="#contact">CONTACT</a></b></li>
+            <li><b><a href="#portfolio">PORTFOLIO</a></b></li>
+            <li><b><a href="qotd.html">QOTD</a></b></li>
+        </ul>
+     </nav>
+     <section id="about-me">
         <h1><center>ABOUT ME</center></h1>
         <section id="selfie">
         <img src="images/dkselfie.png" alt="Dakota Snyder" width="145" height="192">
@@ -121,6 +127,7 @@
             <img src="images/wraptrap.jpg" alt="Wrap" width="500" height="375">
             <img src="images/smallscleaning.jpg" alt="Smalls" width="500" height="375">
             <img src="images/unifiedpallet.jpg" alt="Unified" width="500" height="375">
+            <img src="images/fst.svg" alt="Foreign" width="200" height="150">
         </div>
         <button id="back-button">Back</button>
         <button id="next-button">Next</button>
