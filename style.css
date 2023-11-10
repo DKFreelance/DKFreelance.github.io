@@ -18,10 +18,9 @@ h3 {
 }
 
 p {
-    text-align: justify-all;
-    padding: 0px 100px;
-    margin-left: 9%;
-    margin-right: 9%;
+    text-align: justify;
+    padding: 0 5%;  /* Adjust as needed */
+    margin: 0 5%;   /* Adjust as needed */
     cursor: url('cursor.cur'), auto;
 }
 
@@ -82,24 +81,6 @@ nav {
     color: #FFFFFF; /* Change this to your desired hover color */
     cursor: url('cursor.cur'), auto;
     text-decoration: underline;
-}
-
-.menu-icon {
-  display: none; /* Initially hidden */
-}
-
-@media screen and (max-width: 600px) {
-  .menu-icon {
-    display: block; /* Show the icon on smaller screens */
-    cursor: pointer;
-    background-color: #95A1D1;
-    font-family: Arial;
-    color: #FFFFFF;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    cursor: url('cursor.cur'), auto;
-  }
 }
 
 #header {
