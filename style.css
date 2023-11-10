@@ -95,6 +95,9 @@ nav {
     background-color: #95A1D1;
     font-family: Arial;
     color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     cursor: url('cursor.cur'), auto;
   }
 }
@@ -483,4 +486,64 @@ img {
     font-family: Arial;
     color: #FFFFFF;
     cursor: url('cursor.cur'), auto;
+}
+
+/* Add this CSS code for the hamburger menu */
+
+.menu-toggle {
+    display: none; /* Initially hidden */
+    cursor: pointer;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: url('cursor.cur'), auto;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-icon {
+        display: flex; /* Show the icon on smaller screens */
+        cursor: pointer;
+        background-color: #95A1D1;
+        font-family: Arial;
+        color: #FFFFFF;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        cursor: url('cursor.cur'), auto;
+    }
+
+    .menu-list {
+        display: none; /* Hide the list on smaller screens initially */
+        flex-direction: column;
+        position: absolute;
+        top: 55px; /* Adjust as needed based on your header height */
+        left: 0;
+        width: 100%;
+        background-color: #95A1D1;
+        z-index: 1;
+    }
+
+    .menu-list.visible {
+        display: flex; /* Show the list when the menu is toggled */
+    }
+
+    .menu-list li {
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .menu-list a {
+        color: #FFFFFF;
+        cursor: url('cursor.cur'), auto;
+    }
+
+    .menu-list a:hover {
+        color: #7780A7;
+        cursor: url('cursor.cur'), auto;
+    }
 }
