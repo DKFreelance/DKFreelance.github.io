@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const backButton = document.getElementById("back-button");
     const nextButton = document.getElementById("next-button");
     const backToTopButton = document.getElementById("back-to-top");
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuList = document.querySelector('.menu-list');
 
     let currentIndex = 0;
 
@@ -39,7 +41,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     window.addEventListener("scroll", showBackToTopButton);
-    
+
+    menuToggle.addEventListener('click', function () {
+        // Toggle the visibility of the menuList
+        menuList.classList.toggle('visible');
+    });
+
     const quoteElement = document.querySelector('.quote-of-the-day');
     const quoteText = `"Design is thinking, made visual" - Saul Bass`;
 
