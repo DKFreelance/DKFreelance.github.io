@@ -48,7 +48,6 @@ nav {
     color: #FFFFFF; /* Change this to your desired text color */
     display: flex;
     font-family: Arial;
-    justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     height: 55px; /* You can adjust the height as needed */
     cursor: url('cursor.cur'), auto;
@@ -406,6 +405,7 @@ nav {
 @media screen and (max-width: 600px) {
     body {
         font-size: 12px;
+        height: auto
     }
 }
 
@@ -415,6 +415,7 @@ nav {
     }
     .content {
         width: 100%;
+        height: auto;
     }
 }
 
@@ -487,11 +488,9 @@ img {
 @media screen and (max-width: 600px) {
     .menu-icon {
         display: flex; /* Show the icon on smaller screens */
-        cursor: pointer;
         background-color: #95A1D1;
         font-family: Arial;
         color: #FFFFFF;
-        justify-content: center;
         align-items: center;
         align-content: center;
         cursor: url('cursor.cur'), auto;
