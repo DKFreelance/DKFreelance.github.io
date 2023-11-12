@@ -13,6 +13,12 @@ body {
     cursor: url('cursor.cur'), auto;
 }
 
+p {
+    text-align: justify;
+    padding: 0 5%;
+    margin: 0 5%;
+    cursor: url('cursor.cur'), auto;
+}
 .parallax {
     background-attachment: fixed;
     background-position: center;
@@ -418,23 +424,30 @@ nav {
 /* Styles for mobile */
 @media screen and (max-width: 767px) {
     p {
-        padding: 0px 10px;
-        margin-left: 5%;
-        margin-right: 5%;
+        font-family: Arial;
+        margin: 0 5%;
+        padding: 0 5%;
+        text-align: justify;
     }
 
     body {
-        font-size: 12px;
+        font-size: 8px;
+        font-family: Arial;
     }
 
     #menu {
         display: none;
     }
+
     .nav {
         display: none;
     }
 
     .horizontal-menu {
+        display: none;
+    }
+
+    .horizontal-menu li {
         display: none;
     }
 
@@ -459,6 +472,11 @@ nav {
         display: none;
     }
 
+    #about-me {
+        padding: 30px;
+        text-align: center;
+    }
+
     #image-gallery img {
         max-width: 100%;
     }
@@ -471,13 +489,22 @@ nav {
         height: auto;
         padding: 30px 10px;
     }
+
     #contact-form input,
     #contact-form textarea,
     #contact-form select {
         width: 100%;
     }
 
+    #zappad {
+        width: 100%;
+    }
+
     #footer {
-        height: 30px;
+        height: auto;
+        width: auto;
+        font-family: Arial;
+        font-size: 8px;
+        text-align: center;
     }
 }
