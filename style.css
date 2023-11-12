@@ -1,3 +1,4 @@
+/* Common styles for both desktop and mobile */
 html, body {
     margin: 0;
     padding: 0;
@@ -9,18 +10,6 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;
     color: #F5F5EE;
-    cursor: url('cursor.cur'), auto;
-}
-
-h3 {
-    color: #7780A7;
-    cursor: url('cursor.cur'), auto;
-}
-
-p {
-    text-align: justify;
-    padding: 0 5%;  /* Adjust as needed */
-    margin: 0 5%;   /* Adjust as needed */
     cursor: url('cursor.cur'), auto;
 }
 
@@ -41,45 +30,6 @@ p {
     transform: translate(-50%, -50%);
     z-index: 2;
     cursor: url('cursor.cur'), auto;
-}
-
-nav {
-    background-color: #95A1D1; /* Change this to your desired background color */
-    color: #FFFFFF; /* Change this to your desired text color */
-    display: flex;
-    font-family: Arial;
-    align-items: center; /* Center vertically */
-    height: 55px; /* You can adjust the height as needed */
-    cursor: url('cursor.cur'), auto;
-    text-decoration: none;
-}
-
-.menu {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    cursor: url('cursor.cur'), auto;
-}
-
-.menu li {
-    background-color: #95A1D1;
-    padding: 30px;
-    margin: 20px 20px;
-    display: inline-block;
-    cursor: url('cursor.cur'), auto;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #FFFFFF; /* Change this to your desired link color */
-    font-weight: bold;
-    cursor: url('cursor.cur'), auto;
-}
-
-.menu a:hover {
-    color: #FFFFFF; /* Change this to your desired hover color */
-    cursor: url('cursor.cur'), auto;
-    text-decoration: underline;
 }
 
 #header {
@@ -133,6 +83,10 @@ nav {
 }
 
 #dklogo {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
     cursor: url('cursor.cur'), auto;
 }
 
@@ -142,14 +96,52 @@ nav {
     cursor: url('cursor.cur'), auto;
 }
 
-#zappad {
-    display: block;
-    background-color: #FFFFFF;
-    height: 100px;
-    padding: 10px 10px;
+nav {
+    background-color: #95A1D1; /* Change this to your desired background color */
+    color: #FFFFFF; /* Change this to your desired text color */
+    display: flex;
+    font-family: Arial;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 55px; /* You can adjust the height as needed */
     cursor: url('cursor.cur'), auto;
+    text-decoration: none;
 }
 
+/* Style the horizontal menu */
+.horizontal-menu {
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0px;
+  display: flex;
+  font-family: Arial;
+  background-color: #95A1D1; /* Background color for the menu */
+}
+
+/* Style the menu items */
+.horizontal-menu li {
+  padding: 30px;
+  margin: 20px 20px;
+  display: inline-block;
+  cursor: url('cursor.cur'), auto /* Spacing around menu items */
+}
+
+/* Style the menu item links */
+.horizontal-menu a {
+  text-decoration: none; /* Remove underlines from links */
+  font-weight: bold;
+  color: #FFFFFF; /* Text color for links */
+}
+
+/* Style the menu item links on hover */
+.horizontal-menu a:hover {
+  text-decoration: underline;
+  color: #FFFFFF /* Underline links on hover */
+  cursor: url('cursor.cur'), auto;
+}
+
+}
 #selfie {
     padding: 5px 5px;
     cursor: url('cursor.cur'), auto;
@@ -176,21 +168,19 @@ nav {
 }
 
 #image-gallery {
-    display: flex;
-    justify-content: center
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     max-width: 100%;
     cursor: url('cursor.cur'), auto;
 }
 
 #image-gallery img {
     max-width: 100%;
-    margin: 10px;
-    display: block;
+    margin: 0px;
+    display: none;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto;
     cursor: url('cursor.cur'), auto;
 }
 
@@ -256,20 +246,21 @@ nav {
     cursor: url('cursor.cur'), auto;
 }
 
-#contact-form input {
-    width: 40%;
+#contact-form input,
+#contact-form textarea {
+    width: 50%;
     padding: 10px;
     margin-top: 5px;
     border: 2px solid #95A1D1;
-    border-radius: 50px;
+    border-radius: 10px;
     font-family: Arial, sans-serif;
-    color: #7780A7;
+    color: #95A1D1;
     cursor: url('cursor.cur'), auto;
 }
 
 #contact-form select {
-    border-radius: 50px;
-    width: 42%;
+    border-radius: 10px;
+    width: 52%;
     margin-top: 5px;
     border: 2px solid #95A1D1;
     font-family: Arial, sans-serif;
@@ -280,14 +271,7 @@ nav {
 
 #contact-form textarea {
     resize: none;
-    width: 40%;
-    height: 100px;
-    padding: 10px;
-    margin-top: 5px;
-    color: #7780A7;
-    border: 2px solid #95A1D1;
-    font-family: Arial, sans-serif;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: url('cursor.cur'), auto;
 }
 
@@ -300,7 +284,7 @@ nav {
     padding: 10px 20px;
     border: none;
     color: #95A1D1;
-    border-radius: 50px;
+    border-radius: 20px;
     cursor: url('cursor.cur'), auto;
 }
 
@@ -311,16 +295,22 @@ nav {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-#footer {
-    height: 170px;
+#zappad {
+    display: block;
     background-color: #FFFFFF;
-    font-size: 20px;
-    font-family: Arial;
-    font-size: 16px;
+    height: 100px;
+    padding: 10px 10px;
+    cursor: url('cursor.cur'), auto;
+}
+
+#footer {
+    height: auto;
+    background-color: #FFFFFF;
+    font-size: 20 px;
     font-weight: normal;
+    font-family: Arial;
     color: #95A1D1;
-    padding: 0px 0px;
-    text-align: center;
+    padding: 20px;
     cursor: url('cursor.cur'), auto;
 }
 
@@ -402,44 +392,6 @@ nav {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 12px;
-        height: auto
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .sidebar {
-        display: none;
-    }
-    .content {
-        width: 100%;
-        height: auto;
-    }
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-@media screen and (max-width: 600px) {
-    .desktop-only {
-        display: none;
-    }
-}
-
-.nav-links {
-  display: block; /* Initially displayed */
-}
-
-@media screen and (max-width: 600px) {
-  .nav-links {
-    display: none; /* Hide the links on smaller screens */
-  }
-}
-
 #back-to-top {
     display: none;
     font-family: Arial;
@@ -463,67 +415,69 @@ img {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-#back-to-top:active {
-    background-color: #7780A7;
-    font-family: Arial;
-    color: #FFFFFF;
-    cursor: url('cursor.cur'), auto;
-}
-
-/* Add this CSS code for the hamburger menu */
-
-.menu-toggle {
-    display: none; /* Initially hidden */
-    cursor: pointer;
-}
-
-.menu-list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    cursor: url('cursor.cur'), auto;
-}
-
-@media screen and (max-width: 600px) {
-    .menu-icon {
-        display: flex; /* Show the icon on smaller screens */
-        background-color: #95A1D1;
-        font-family: Arial;
-        color: #FFFFFF;
-        align-items: center;
-        align-content: center;
-        cursor: url('cursor.cur'), auto;
+/* Styles for mobile */
+@media screen and (max-width: 767px) {
+    p {
+        padding: 0px 10px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
-    .menu-list {
-        display: none; /* Hide the list on smaller screens initially */
-        flex-direction: column;
-        position: absolute;
-        top: 55px; /* Adjust as needed based on your header height */
-        left: 0;
+    body {
+        font-size: 12px;
+    }
+
+    #menu {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+
+    .horizontal-menu {
+        display: none;
+    }
+
+    .parallax {
+        height: 100px;
+    }
+
+    .logo-container {
+        top: 30%;
+    }
+
+    #header {
+        height: 100px;
+        font-size: 16px;
+    }
+
+    #header::before {
+        height: auto;
+    }
+
+    #animated-gif {
+        display: none;
+    }
+
+    #image-gallery img {
+        max-width: 100%;
+    }
+
+    #services {
+        height: auto;
+    }
+
+    #contact {
+        height: auto;
+        padding: 30px 10px;
+    }
+    #contact-form input,
+    #contact-form textarea,
+    #contact-form select {
         width: 100%;
-        background-color: #95A1D1;
-        z-index: 1;
     }
 
-    .menu-list.visible {
-        display: flex; /* Show the list when the menu is toggled */
-    }
-
-    .menu-list li {
-        padding: 10px;
-        margin: 0;
-        text-align: center;
-    }
-
-    .menu-list a {
-        color: #FFFFFF;
-        cursor: url('cursor.cur'), auto;
-    }
-
-    .menu-list a:hover {
-        color: #7780A7;
-        cursor: url('cursor.cur'), auto;
+    #footer {
+        height: 30px;
     }
 }
